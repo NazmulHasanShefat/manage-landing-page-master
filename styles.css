@@ -500,5 +500,70 @@
     }
     .main-about-number {
         margin-left: 34px;
+        margin-bottom:10px;
     }
 }
+/* end about section */
+/* swiper testiomonal css  */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* testiomonial */
+  .testimonial{
+    height: 300px;
+    width: 100%;
+  }
+  .user-continer{
+    height:200px;
+    width:350px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+  .user-content{
+    height: 150px;
+    width:300px;
+  }
+  .user-image{
+    width:100%;
+    height:max-content;
+    display: flex;
+    justify-content: center;
+  }
+  .user-image img{
+    height: 40px;
+    width: 40px;
+  }
+  .user-name{
+    width:100%;
+    height:max-content;
+  }
+  .user-name h3{
+    font-family: var(--font_1);
+  }
+  .user-comment{
+    width:100%;
+    height:max-content;
+  }
+  .user-comment p{
+    font-size:16px;
+    font-family: var(--font_2);
+    color:var(--DarkGrayishBlue);
+  }

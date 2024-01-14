@@ -17,4 +17,24 @@ let body = document.querySelector("body");
      body.style.backgroundColor = "";
    })
 
-     
+// swaiper js
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 60,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints:{
+    0:{
+      slidesPerView: 1,
+    },
+    520:{
+      slidesPerView: 2,
+    },
+    950:{
+      slidesPerView: 3,
+    },
+  },
+});
