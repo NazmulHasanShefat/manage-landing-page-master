@@ -159,18 +159,19 @@
         background-size: 111% 99%;
         background-repeat: no-repeat;
         position: relative;
-        left: 272px;
-        top: -50px;
+        left: 171px;
+        top: 0;
+        z-index: 1;
     }
-    .nav-logo {
+    /* .nav-logo {
         height: 70px;
         width: 39%;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-} */
+    } 
+}
+    */
 @media screen and (max-width:438px) {
     .nav-logo {
         height: 70px;
@@ -235,6 +236,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media screen and (max-width:450px) {
+    .left-section {
+        height: 330px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 /* start text section */
 .text-container{
@@ -314,6 +323,10 @@
         height: 276px;
         width: 73%;
     }
+    .text-container {
+        width: 80%;
+        height: 229px;
+    }
     /* text container */
     .hero-heading h1 {
         font-family: var(--font_1);
@@ -333,3 +346,159 @@
     }
 }
 /* start about section */
+.about{
+    height:500px;
+    width:100%;
+    display:flex;
+}
+.left-about{
+    height: 500px;
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.right-about{
+    height:500px;
+    width:50%;
+}
+.left-about-content{
+    height: 300px;
+    width:80%;
+}
+.about-heading{
+    width: 100%;
+    height:max-content;
+}
+.about-heading h1{
+    font-size:2.7rem;
+    font-family:var(--font_1);
+}
+.about-detail{
+    height:max-content;
+    width:60%;
+    margin-top:10px;
+}
+.about-detail p{
+    font-size:16px;
+    font-family:var(--font_2);
+    color:var(--DarkGrayishBlue);
+}
+/* end left about section */
+/* start right about  */
+.right-about-content{
+    height:500px;
+    width:90%;
+}
+.right-about-detail-content{
+    height:150px;
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
+}
+.right-about-number{
+    width:10%;
+    height:150px
+}
+.right-about-detail{
+    width: 80%;
+    height:150px
+}
+.main-about-number{
+    width:70px;
+    height:30px;
+    background-color:var(--BrightRed);
+    color:var(--VaryLightGray);
+    font-size:1.2rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:15px;
+}
+.right-about-heading{
+    width: 100%;
+    height:max-content;
+}
+.right-about-main-detail{
+    width:100%;
+    height:max-content;
+    color:var(--DarkGrayishBlue);
+}
+/* about responsib */
+@media screen and (max-width:856px) {
+    .hero-button {
+        width: 100%;
+        height: max-content;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }    
+    .about{
+        width: 100%;
+        height: max-content;
+        flex-direction:column;
+    }
+    .left-about,.right-about{
+        height: max-content;
+        width: 100%;
+        margin-top:20px;
+    }
+    .about-heading {
+        width: 100%;
+        height: max-content;
+    }
+    .about-detail {
+        height: max-content;
+        width: 60%;
+        margin-top: 10px;
+    }
+    .about-heading h1 {
+        font-size: 2rem;
+        font-family: var(--font_1);
+    }
+    .left-about-content {
+        height: 213px;
+        width: 80%;
+    }
+}
+@media screen and (max-width:556px) {
+    .about-heading h1 {
+        font-size: 2rem;
+        font-family: var(--font_1);
+    }
+    .left-about-content {
+        height: 213px;
+        width: 80%;
+        text-align: center;
+    }
+    .about-detail{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .about-detail p {
+       text-align: center;
+    }
+    .right-about-detail-content {
+        height: 150px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .right-about-content {
+        height: 500px;
+        width: 100%;
+    }
+    .right-about-number {
+        width: 10%;
+        height: 52px;
+    }
+    .right-about-heading {
+        margin-left: 35px;
+    }
+    .right-about-main-detail {
+        margin-left: 38px;
+    }
+    .main-about-number {
+        margin-left: 34px;
+    }
+}
