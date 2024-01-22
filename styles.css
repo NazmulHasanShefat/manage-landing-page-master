@@ -7,6 +7,7 @@
 :root{
     --BrightRed: hsl(12, 88%, 59%);
     --BrightRed_hover: hsla(12, 88%, 59%, 0.644);
+    --BrightRed_hover_2: hsla(7, 100%, 75%, 0.644);
     --DarkBlue: hsl(228, 39%, 23%);
     /* ### Neutral  */
     --DarkGrayishBlue: hsl(227, 12%, 61%);
@@ -23,8 +24,8 @@
     background-size: 111% 99%;
     background-repeat: no-repeat;
     position: absolute;
-    z-index: 1;
-    left: 606px;
+    z-index: -1;
+    left: 603px;
     top: -50px;
 }
 .nav{
@@ -146,7 +147,7 @@
         background-repeat: no-repeat;
         position: absolute;
         z-index: 1;
-        left: 300px;
+        left: 217px;
         top: -50px;
     }
 
@@ -480,12 +481,12 @@
        text-align: center;
     }
     .right-about-detail-content {
-        height: 150px;
+        height: 200px;
         width: 100%;
         flex-direction: column;
     }
     .right-about-content {
-        height: 500px;
+        height: max-content;
         width: 100%;
     }
     .right-about-number {
@@ -611,7 +612,7 @@
     height: 120px;
 }
 .get-inner-text{
-    width: 65%;
+    width: 63%;
     height: 120px;
     font-size:1.2rem;
     font-family:var(--font_1);
@@ -646,7 +647,7 @@
     }
     .get-started-4-continer{
         width: 100%;
-        height: max-content;
+        height: 182px;
         flex-direction: column;
     }
     .get-star-4-left{
@@ -663,5 +664,143 @@
     .get-inner-text {
         width: 90%;
         height: max-content\;
+    }
+}
+/* end get 4 container */
+/* start footer container  */
+.footer-main-container{
+    height: max-content;
+    width: 100%;
+    background-color:var(--VeryDarkBlue);
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.footer-copyright{
+    color:#fff;
+}
+.Contact-logos{
+    grid-row:2/2;
+}
+.footer-navigation{
+    grid-column:2/3;
+    grid-row:1/3;
+}
+/* start style footer section */
+.company-logo{
+    width: 100%;
+    height: 80px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+/* footer contact icons */
+.all-contact-icons-container{
+    width: 100%;
+    height: 80px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    gap:15px;
+}
+.all-contact-icons-container .icon:hover{
+    cursor: pointer;
+    path{
+        fill:var(--BrightRed);
+    }
+}
+
+/* start footer navigation */
+.footer-navigation{
+    width: 100%;
+    height: 160px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-foot-nav{
+    width: 45%;
+    height: 100px;
+}
+.right-foot-nav{
+    width:45%;
+    height:100px;
+}
+.footer-nav-link{
+    padding:3px 10px;
+}
+.footer-nav-link a{
+    text-decoration:none;
+    color:var(--VaryLightGray);
+    transition:all .3s ease-in;
+}
+.footer-nav-link a:hover{
+    color:var(--BrightRed);
+}
+/* end footer navigation */
+/* start footer input fuld  */
+.input-container{
+    width: 100%;
+    height:80px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap:5px;
+}
+.email-box{
+    height: 42px;
+    width:175px;
+    border-radius:27px;
+    border: none;
+    outline:none;
+    padding:21px;
+}
+.submit-btn{
+    height: 42px;
+    width: 60px;
+    border-radius: 20px;
+    border:none;
+    outline:none;
+    background-color:var(--BrightRed);
+    color:var(--VaryLightGray);
+}
+.submit-btn:hover{
+    background-color: var(--BrightRed_hover_2);
+}
+.footer-copyright{
+    width: 100%;
+    height:80px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+/* responsib on footer section */
+@media screen and (max-width:775px) {
+    .footer-main-container{
+        height: max-content;
+        width: 100%;
+        background-color:var(--VeryDarkBlue);
+        display:grid;
+        grid-template-columns: repeat(1, auto);
+    }
+    .footer-contact-form{
+        height: max-content;
+        grid-column:1/3;
+        grid-row:1/2;
+    }
+    .footer-navigation {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    .Contact-logos {
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+    .company-logo {
+        grid-column: 1/3;
+        grid-row: 7/8;
+    }
+    .footer-copyright{
+        grid-column: 1/3;
+        grid-row: 9/10;
     }
 }
