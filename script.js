@@ -1,3 +1,4 @@
+// nav open 
 let navlist = document.querySelector(".nav-list");
 let button = document.querySelector(".toggle-btn");
 let button_close = document.querySelector(".toggle-button-container2");
@@ -38,3 +39,16 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+// form validation
+function myValidation(){
+  var error = document.querySelector(".error-massage");
+  var email_box = document.querySelector(".email-box");
+  var isvalid = true;
+  var email = document.forms["myform"]["email"].value;
+  if(email.length < 1){
+    error.innerHTML = "input valid email";
+    email_box.style.borderColor = "red";
+    isvalid = false;
+  }
+  return isvalid;
+}
