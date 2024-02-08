@@ -67,7 +67,7 @@
 .nav-list .nav-menu a{
     text-decoration:none;
     color:var(--VeryDarkBlue);
-    font-size:.9rem;
+    font-size:1.1rem;
     font-family: var(--font_1);
 }
 .nav-list .nav-menu a:hover{
@@ -163,8 +163,8 @@
         left:20px;
     }
     .nav-logo img{
-        height: 20px;
-        width:100px;
+        height: 24px;
+        width:123px;
     }
     .hero-background-container {
         height: 102vh;
